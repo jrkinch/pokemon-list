@@ -1,0 +1,19 @@
+[project]
+name = "pokemon-list"
+version = "0.1.0"
+description = "Project for scrapping Pokémon names."
+authors = [{name = "jrkinch"}]
+dependencies = [
+	"pandas==2.2.3",
+	"Requests==2.32.3",
+	"selenium==4.30.0",
+	"pytest==8.2.2"
+]
+
+[tools.setuptools.packages.find]
+where = ["./src"]
+include = ["pokemon_list"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
